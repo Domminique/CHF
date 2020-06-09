@@ -3,10 +3,10 @@ const path = require('path');
 
 const ngApp = express();
 
-ngApp.use(express.static('./dist/chf-org'));
+ngApp.use(express.static('./dist/nglp'));
 
 ngApp.get('/*', function (request, response) {
-    response.sendFile(path.join(__dirname, '/dist/chf-org/index.html'));
+    response.sendFile(path.join(__dirname, '/dist/nglp/index.html'));
 });
 
 ngApp.listen(process.env.PORT || 8080);
