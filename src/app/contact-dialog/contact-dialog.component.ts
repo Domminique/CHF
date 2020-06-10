@@ -37,6 +37,10 @@ export class ContactDialogComponent {
     Validators.email,
   ]);
 
+  countyFormControl = new FormControl('', [
+    Validators.required
+  ]);
+
   matcher = new NgLpErrorStateMatcher();
 
   contact = new Contact();

@@ -20,7 +20,14 @@
 					      Phone is <strong>required</strong>
 					    </mat-error>
 					  </mat-form-field>
-
+					  <mat-form-field appearance="outline" color="accent">
+						<mat-label>Please enter your county name </mat-label>
+					  <input matInput placeholder="County" [formControl]="countyFormControl"
+							 [errorStateMatcher]="matcher">
+					  <mat-error *ngIf="countyFormControl.hasError('required')">
+						county is <strong>required</strong>
+					  </mat-error>
+					</mat-form-field>
 					  <mat-form-field appearance="outline" color="accent">
 					  	<mat-label>Please enter your email </mat-label>
 					    <input matInput placeholder="Email" [formControl]="emailFormControl"

@@ -17,13 +17,10 @@ export class PricingComponent implements OnInit {
   displayedColumns: string[] = ['item', 'cost'];
 
   specifications: Specification[] = [
-    {item: '1000mm Base unit', cost: 150},
-    {item: '1000mm Base unit', cost: 130},
-    {item: '600mm Built under', cost: 200},
-    {item: '600mm Larder unit', cost: 300},
-    {item: '500mm Wall unit', cost: 250},
-    {item: '500mm Wall unit', cost: 135},
-    {item: '1000mm Wall unit', cost: 205},
+    {item: 'Bed ', cost: 5000},
+    {item: 'Medication', cost: 13000},
+    {item: 'Procedure', cost: 70000},
+    
   ];
 
   constructor() { }

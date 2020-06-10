@@ -30,6 +30,10 @@ export class ContactComponent implements OnInit {
     Validators.required,
     Validators.email,
   ]);
+  
+  countyFormControl = new FormControl('', [
+    Validators.required
+  ]);
 
   matcher = new NgLpErrorStateMatcher();
 

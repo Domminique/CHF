@@ -8,8 +8,8 @@
 	        <h2 [ngStyle.xs]="{'font-size': '18px'}" [ngStyle.sm]="{'font-size': '22px'}">Dedicated to ensuring high-quality patient care by advancing the science, prevention and management of Hemorrhoids.</h2>
 	        </div>
 	        <div fxLayout="row" [class.animated]="isHeadingBtn" [class.fadeIn]="isHeadingBtn" [class.heading-btn]="isHeadingBtn">
-        		<a class="heading-button-left" mat-flat-button color="accent">Read More</a>
-		        <a class="heading-button-right" mat-stroked-button color="accent">Sponsor a Hemorrhoidectomy</a>
+        		<a class="heading-button-left" mat-flat-button color="accent" (click)="openDialog()" >Contacts us</a>
+		        <a class="heading-button-right" mat-stroked-button color="accent" (click)="openDialog()">Sponsor a Hemorrhoidectomy</a>
 	    	</div>
 	    </div>
    </div>

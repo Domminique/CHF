@@ -5,7 +5,7 @@
 		            <h2 [ngStyle.lt-md]="{'margin-bottom': '15px'}">Contact Us</h2>
 		            </div>
 		            <div>
-			        <h3 [ngStyle.xs]="{'font-size': '18px'}" [ngStyle.sm]="{'font-size': '22px'}">Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Doloribus numquam quis.</h3>
+			        <h3 [ngStyle.xs]="{'font-size': '18px'}" [ngStyle.sm]="{'font-size': '22px'}">Are you practitioners, health care workers and patients who desire information about the management and processes  of the diseases ?</h3>
 			        </div>
 		        </div>
 
@@ -31,6 +31,15 @@
 					      Phone is <strong>required</strong>
 					    </mat-error>
 					  </mat-form-field>
+
+					  <mat-form-field appearance="outline" color="accent">
+						<mat-label>Please enter your county name </mat-label>
+					  <input matInput placeholder="county" [formControl]="countyFormControl"
+							 [errorStateMatcher]="matcher">
+					  <mat-error *ngIf="countyFormControl.hasError('required')">
+						county is <strong>required</strong>
+					  </mat-error>
+					</mat-form-field>
 
 					  <mat-form-field appearance="outline" color="accent">
 					  	<mat-label>Please enter your email </mat-label>

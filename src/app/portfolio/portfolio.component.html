@@ -6,19 +6,20 @@
             <h2 [ngStyle.lt-md]="{'margin-bottom': '15px'}">Medical institution for surgical, hospitalization and a period of rest</h2>
             </div>
             <div>
-            <h3 [ngStyle.xs]="{'font-size': '18px'}" [ngStyle.sm]="{'font-size': '22px'}"> Kenyatta National Hospital.</h3>
+            <h3 [ngStyle.xs]="{'font-size': '18px'}" [ngStyle.sm]="{'font-size': '22px'}"> Kenya.</h3>
             </div>
         </div>
       
         <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutWrap="nowrap" fxLayoutGap="30px" fxLayoutGap.sm="8px">
           <div fxFlex="33.33" [about]>
             <mat-card class="p-0 m-0">
-              <img mat-card-image src="assets/img/1.jpg">
+              <img mat-card-image src="assets/img/4.jpg">
               <mat-card-content>
-                <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Project Title</h5>
+                <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">  South B Hospital.</h5>
                 <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
-                   Kenya.
+                  Nairobi
                 </p>
+                <a class="heading-button-right" mat-stroked-button color="accent" (click)="openDialog()">Book a Hemorrhoidectomy</a>
                 <mat-divider class="mb-1"></mat-divider>
                 <button class="portfolio-button" mat-icon-button><mat-icon class="text-muted">link1</mat-icon></button>
                 <button class="portfolio-button" mat-icon-button><mat-icon class="text-muted">share</mat-icon></button>
@@ -29,10 +30,12 @@
             <mat-card class="p-0 m-0">
               <img mat-card-image src="assets/img/2.jpg">
               <mat-card-content>
-                <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Project Title</h5>
+                <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}"> 
+                  Kenyatta National Hospital.</h5>
                 <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
-                   Kenyatta National Hospital.
+                  Nairobi
                 </p>
+                <a class="heading-button-right" mat-stroked-button color="accent" (click)="openDialog()">Book a Hemorrhoidectomy</a>
                 <mat-divider class="mb-1"></mat-divider>
                 <button class="portfolio-button" mat-icon-button><mat-icon class="text-muted">link</mat-icon></button>
                 <button class="portfolio-button" mat-icon-button><mat-icon class="text-muted">share</mat-icon></button>
@@ -41,12 +44,13 @@
           </div>
           <div fxFlex="33.33" [about]>
             <mat-card class="p-0 m-0">
-              <img mat-card-image src="assets/img/3.jpg">
+              <img mat-card-image src="assets/img/5.jpg">
               <mat-card-content>
-                <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Project Title</h5>
+                <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Nairobi Hospital</h5>
                 <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
-                   Kenyatta National Hospital.
+                   Nairobi
                 </p>
+                <a class="heading-button-right" mat-stroked-button color="accent" (click)="openDialog()">Book a Hemorrhoidectomy</a>
                 <mat-divider class="mb-1"></mat-divider>
                 <button class="portfolio-button" mat-icon-button><mat-icon class="text-muted">link</mat-icon></button>
                 <button class="portfolio-button" mat-icon-button><mat-icon class="text-muted">share</mat-icon></button>
@@ -55,14 +59,14 @@
           </div>
         </div>
         
-        <div class="portfolio-row" fxLayout="row" fxLayout.lt-sm="column" fxLayoutWrap="nowrap" fxLayoutGap="30px" fxLayoutGap.sm="8px">
+        <!-- <div class="portfolio-row" fxLayout="row" fxLayout.lt-sm="column" fxLayoutWrap="nowrap" fxLayoutGap="30px" fxLayoutGap.sm="8px">
           <div fxFlex="33.33" [about]>
             <mat-card class="p-0 m-0">
               <img mat-card-image src="assets/img/4.jpg">
               <mat-card-content>
-                <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Project Title</h5>
+                <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Mbagathi Hospital</h5>
                 <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
-                   Kenyatta National Hospital.
+                  Book appointment
                 </p>
                 <mat-divider class="mb-1"></mat-divider>
                 <button class="portfolio-button" mat-icon-button><mat-icon class="text-muted">link</mat-icon></button>
@@ -76,7 +80,7 @@
               <mat-card-content>
                 <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Project Title</h5>
                 <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
-                   Kenyatta National Hospital.
+                  Book appointment
                 </p>
                 <mat-divider class="mb-1"></mat-divider>
                 <button class="portfolio-button" mat-icon-button><mat-icon class="text-muted">link</mat-icon></button>
@@ -86,11 +90,11 @@
           </div>
           <div fxFlex="33.33" [about]>
             <mat-card class="p-0 m-0">
-              <img mat-card-image src="assets/img/6.jpg">
+              <img mat-card-image src="assets/img/4.jpg">
               <mat-card-content>
                 <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Project Title</h5>
                 <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
-                   Kenyatta National Hospital.
+                  Book appointment
                 </p>
                 <mat-divider class="mb-1"></mat-divider>
                 <button class="portfolio-button" mat-icon-button><mat-icon class="text-muted">link</mat-icon></button>
@@ -98,7 +102,7 @@
               </mat-card-content>
             </mat-card>
           </div>
-        </div>
+        </div> -->
 
       </div>
 </section>

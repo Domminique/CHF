@@ -1,4 +1,4 @@
-# Chikati Heamorhoids Foundation
+# Chikati Hemorrhoids Foundation
 
 
 ## Overview

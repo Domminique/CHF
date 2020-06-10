@@ -3,10 +3,10 @@
 
       	<div class="pricing-section pricing-heading" fxLayout="column" fxLayoutAlign="center center">
             <div>
-            <h2 [ngStyle.lt-md]="{'margin-bottom': '15px'}">Pricing</h2>
+            <h2 [ngStyle.lt-md]="{'margin-bottom': '15px'}">Hospital costs </h2>
             </div>
             <div>
-	        <h3 [ngStyle.xs]="{'font-size': '18px'}" [ngStyle.sm]="{'font-size': '22px'}">Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Doloribus numquam quis.</h3>
+	        <h3 [ngStyle.xs]="{'font-size': '18px'}" [ngStyle.sm]="{'font-size': '22px'}">Hemorrhoidectomy surgery may be covered by your medical insurance policy. We advise you to check directly with your insurance provider and get written confirmation before commencing treatment.</h3>
 	        </div>
         </div>
 
@@ -26,7 +26,7 @@
 			  <ng-container matColumnDef="cost">
 			    <th mat-header-cell *matHeaderCellDef> Cost </th>
 			    <td mat-cell *matCellDef="let specification"> {{specification.cost | currency}} </td>
-			    <td mat-footer-cell *matFooterCellDef> {{getTotalCost() | currency}} </td>
+			    <td mat-footer-cell *matFooterCellDef> {{getTotalCost() | currency:' Kes  ':' Kes  '}} </td>
 			  </ng-container>
 
 			  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -50,8 +50,8 @@
 			  <!-- Cost Column -->
 			  <ng-container matColumnDef="cost">
 			    <th mat-header-cell *matHeaderCellDef> Cost </th>
-			    <td mat-cell *matCellDef="let specification"> {{specification.cost | currency}} </td>
-			    <td mat-footer-cell *matFooterCellDef> {{getTotalCost() | currency}} </td>
+			    <td mat-cell *matCellDef="let specification"> {{specification.cost | currency:' Kes  '}} </td>
+			    <td mat-footer-cell *matFooterCellDef> {{getTotalCost() | currency:' Kes  '}} </td>
 			  </ng-container>
 
 			  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -75,8 +75,8 @@
 			  <!-- Cost Column -->
 			  <ng-container matColumnDef="cost">
 			    <th mat-header-cell *matHeaderCellDef> Cost </th>
-			    <td mat-cell *matCellDef="let specification"> {{specification.cost | currency}} </td>
-			    <td mat-footer-cell *matFooterCellDef> {{getTotalCost() | currency}} </td>
+			    <td mat-cell *matCellDef="let specification"> {{specification.cost | currency:' Kes  '}} </td>
+			    <td mat-footer-cell *matFooterCellDef> {{getTotalCost() | currency:' Kes  '}} </td>
 			  </ng-container>
 
 			  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -100,8 +100,8 @@
 			  <!-- Cost Column -->
 			  <ng-container matColumnDef="cost">
 			    <th mat-header-cell *matHeaderCellDef> Cost </th>
-			    <td mat-cell *matCellDef="let specification"> {{specification.cost | currency}} </td>
-			    <td mat-footer-cell *matFooterCellDef> {{getTotalCost() | currency}} </td>
+			    <td mat-cell *matCellDef="let specification"> {{specification.cost | currency:' Kes  '}} </td>
+			    <td mat-footer-cell *matFooterCellDef> {{getTotalCost() | currency:' Kes  '}} </td>
 			  </ng-container>
 
 			  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
