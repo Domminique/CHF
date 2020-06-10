@@ -26,7 +26,7 @@
 			  <ng-container matColumnDef="cost">
 			    <th mat-header-cell *matHeaderCellDef> Cost </th>
 			    <td mat-cell *matCellDef="let specification"> {{specification.cost | currency}} </td>
-			    <td mat-footer-cell *matFooterCellDef> {{getTotalCost() | currency:' Kes  ':' Kes  '}} </td>
+			    <td mat-footer-cell *matFooterCellDef> {{getTotalCost() | currency:' Kes  '}} </td>
 			  </ng-container>
 
 			  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -125,7 +125,7 @@
 			  <!-- Cost Column -->
 			  <ng-container matColumnDef="cost">
 			    <th mat-header-cell *matHeaderCellDef> Cost </th>
-			    <td mat-cell *matCellDef="let specification"> {{specification.cost | currency}} </td>
+			    <td mat-cell *matCellDef="let specification"> {{specification.cost | currency :' Kes  '}} </td>
 			    <td mat-footer-cell *matFooterCellDef> {{getTotalCost() | currency}} </td>
 			  </ng-container>
 
@@ -150,7 +150,7 @@
 			  <!-- Cost Column -->
 			  <ng-container matColumnDef="cost">
 			    <th mat-header-cell *matHeaderCellDef> Cost </th>
-			    <td mat-cell *matCellDef="let specification"> {{specification.cost | currency}} </td>
+			    <td mat-cell *matCellDef="let specification"> {{specification.cost | currency:' Kes  '}} </td>
 			    <td mat-footer-cell *matFooterCellDef> {{getTotalCost() | currency}} </td>
 			  </ng-container>
 
